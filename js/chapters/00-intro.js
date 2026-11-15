@@ -22,7 +22,12 @@
   <path d="M480 150 C 390 205, 330 205, 242 150" style="fill:none;stroke:var(--muted);stroke-width:2" marker-end="url(#arr)"/>
   <text x="360" y="214" text-anchor="middle" style="fill:var(--text);font:600 15px system-ui">next state sₜ₊₁ , reward rₜ₊₁</text>
   <circle r="6" style="fill:var(--accent)">
-    <animateMotion dur="3.2s" repeatCount="indefinite" path="M240 85 C 330 30, 390 30, 478 85 L480 150 C 390 205, 330 205, 242 150 Z"/>
+    <animateMotion dur="4.8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.104;0.4375;1" path="M240 85 C 330 30, 390 30, 478 85"/>
+    <animate attributeName="opacity" dur="4.8s" repeatCount="indefinite" calcMode="discrete" values="1;0" keyTimes="0;0.5"/>
+  </circle>
+  <circle r="6" style="fill:var(--accent)" opacity="0">
+    <animateMotion dur="4.8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;0;1;1" keyTimes="0;0.5;0.604;0.9375;1" path="M480 150 C 390 205, 330 205, 242 150"/>
+    <animate attributeName="opacity" dur="4.8s" repeatCount="indefinite" calcMode="discrete" values="0;1" keyTimes="0;0.5"/>
   </circle>
 </svg>`;
 
