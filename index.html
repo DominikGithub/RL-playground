@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RL Playground</title>
+  <meta name="description" content="An interactive tour of reinforcement learning: MDPs, bandits, TD learning, DQN, policy gradients, PPO, planning and RL for language models.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a7a73'/%3E%3Ccircle cx='11' cy='16' r='4' fill='white'/%3E%3Cpath d='M16 11c5-4 10-2 10 3' stroke='white' stroke-width='2.4' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <div class="mobile-bar">
+    <button class="btn small" type="button" aria-label="Open chapter menu">☰ Chapters</button>
+    <strong>RL Playground</strong>
+    <button class="btn small mobile-search" type="button" aria-label="Search">⌕ Search</button>
+  </div>
+  <div id="app">
+    <aside id="sidebar"></aside>
+    <main id="main"></main>
+  </div>
+
+  <!-- core -->
+  <script src="js/core/util.js"></script>
+  <script src="js/core/nn.js"></script>
+  <script src="js/core/chart.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/mathfit.js"></script>
+  <!-- environments & algorithms (DOM-free, tested in tests/run-tests.js) -->
+  <script src="js/envs/gridworld.js"></script>
+  <script src="js/envs/cartpole.js"></script>
+  <script src="js/algos/dp.js"></script>
+  <script src="js/algos/tabular.js"></script>
+  <script src="js/algos/bandit.js"></script>
+  <script src="js/algos/dqn.js"></script>
+  <script src="js/algos/pg.js"></script>
+  <script src="js/algos/mcts.js"></script>
+  <!-- visualisation -->
+  <script src="js/viz/gridview.js"></script>
+  <script src="js/viz/cartpole-lab.js"></script>
+  <!-- chapters (order = navigation order) -->
+  <script src="js/chapters/00-intro.js"></script>
+  <script src="js/chapters/01-mdp.js"></script>
+  <script src="js/chapters/02-bandits.js"></script>
+  <script src="js/chapters/03-td.js"></script>
+  <script src="js/chapters/04-dqn.js"></script>
+  <script src="js/chapters/05-pg.js"></script>
+  <script src="js/chapters/06-ppo.js"></script>
+  <script src="js/chapters/07-planning.js"></script>
+  <script src="js/chapters/08-llm.js"></script>
+  <script src="js/chapters/09-landscape.js"></script>
+  <script src="js/chapters/10-cheatsheet.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
